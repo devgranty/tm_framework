@@ -21,7 +21,7 @@
 
 //  APPLICATION
 // Let us define app version.
-define('APP_VERSION', '1.6.6');
+define('APP_VERSION', '1.6.7');
 // Site default app name or site name.
 define('SITE_NAME', 'New Project');
 // Define site scheme://domain.
@@ -34,19 +34,16 @@ define('ENABLE_SECURE_SCHEME', false);
 
 // DATABASE
 // Configure database connection settings
-define('DB_HOSTNAME', 'mysql:dbname=project7_db;host=127.0.0.1');
+define('DB_HOSTNAME', 'mysql:dbname=project_db;host=127.0.0.1');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
-// define('DB_HOSTNAME', 'mysql:dbname=meanometer_db;unix_socket=/cloudsql/potent-zodiac-272018:europe-west1:meanometer-db-instance');
-// define('DB_USERNAME', 'meanometer-db-admin');
-// define('DB_PASSWORD', 'D3veloper!');
 
 // COOKIE
 // Configure cookie parameters and security
 define('ENABLE_SECURE_COOKIE', false);
 
 // SESSION
-define('DEFAULT_SESSION_COOKIE_NAME', '_msid');
+define('DEFAULT_SESSION_COOKIE_NAME', 'sessid');
 define('ENABLE_SECURE_SESSION_COOKIE', false);
 
 // MAIL

@@ -1,5 +1,13 @@
 {
-    "require": {
-        "phpmailer/phpmailer": "^6.1"
-    }
+    "name": "devgranty/tm_framework",
+    "description": "TM Framwork is a PHP based framework that allows for easy and faster development of PHP applications",
+    "type": "library",
+    "authors": [
+        {
+            "name": "devgranty",
+            "email": "grantobioma@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {}
 }

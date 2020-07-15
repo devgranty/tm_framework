@@ -86,4 +86,8 @@ class Datetime{
 	public static function stringToTimestamp(string $strtime){
 		return strtotime($strtime, self::timestamp());
 	}
+
+	public static function addStringToTimestamp(string $strtime, int $timestamp){
+		return strtotime($strtime, $timestamp);
+	}
 }

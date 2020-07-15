@@ -14,7 +14,7 @@ namespace Classes;
 class Validate extends Database{
 	private static $_query, $_count = 0;
 
-	public function comparePasswords($password, $confirm_password){
+	public static function comparePasswords($password, $confirm_password){
 		if($password === $confirm_password) return true;
 		return false;
 	}
