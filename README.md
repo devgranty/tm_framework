@@ -3,7 +3,7 @@
 TM Framwork is a PHP based framework that allows for easy and faster development of PHP applications.
 The great advantage TM Framework has is:
 
-* Allows you select your own architecture for your application
+* Allows you to choose your own project architecture for your application
 * Easily integrates with 3rd party softwares
 * Allows faster and easy development and design of PHP applications
 * Easily modify, add and resuse functions and classes you create for your project

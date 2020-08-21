@@ -13,7 +13,7 @@ namespace Classes;
 
 class Crypt{
 
-    public function encrypt(string $string, string $cipher = DEFAULT_CIPHER_METHOD, string $crypt_key = DEFAULT_CRYPT_KEY, int $options = 0, string $crypt_iv = DEFAULT_CRYPT_IV){
+    public static function encrypt(string $string, string $cipher = DEFAULT_CIPHER_METHOD, string $crypt_key = DEFAULT_CRYPT_KEY, int $options = 0, string $crypt_iv = DEFAULT_CRYPT_IV){
         if(in_array(strtolower($cipher), openssl_get_cipher_methods())){
             return openssl_encrypt($string, $cipher, $crypt_key, $options, $crypt_iv);
         }else{
@@ -21,7 +21,7 @@ class Crypt{
         }
     }
 
-    public function decrypt(string $string, string $cipher = DEFAULT_CIPHER_METHOD, string $crypt_key = DEFAULT_CRYPT_KEY, int $options = 0, string $crypt_iv = DEFAULT_CRYPT_IV){
+    public static function decrypt(string $string, string $cipher = DEFAULT_CIPHER_METHOD, string $crypt_key = DEFAULT_CRYPT_KEY, int $options = 0, string $crypt_iv = DEFAULT_CRYPT_IV){
         if(in_array(strtolower($cipher), openssl_get_cipher_methods())){
             return openssl_decrypt($string, $cipher, $crypt_key, $options, $crypt_iv);
         }else{
