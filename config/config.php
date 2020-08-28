@@ -19,35 +19,74 @@
  *
  */
 
-//  APPLICATION
-// Let us define app version.
+
+/**
+ * ------------------------------------
+ * APPLICATION
+ * ------------------------------------
+ * 
+ * Let us define app version.
+ */
 define('APP_VERSION', '1.6.7');
+
 // Site default app name or site name.
-define('SITE_NAME', 'New Project');
-// Define site scheme://domain.
-// define('SITE_URL', 'http://localhost');
+define('SITE_NAME', 'tm framework');
+
+// Define site scheme://domain. e.g. define('SITE_URL', 'http://localhost');
 define('SITE_URL', @$_SERVER['HTTP_X_FORWARDED_PROTO'].'://'.$_SERVER['HTTP_HOST']);
+
 // Site root folder after the "scheme://domain".
-define('SROOT', '/projects/project7/');
+define('SROOT', '/projects/tm_framework/');
+
 // Enable secure url
 define('ENABLE_SECURE_SCHEME', false);
 
-// DATABASE
-// Configure database connection settings
+
+
+/**
+ * -------------------------------------
+ * DATABASE
+ * -------------------------------------
+ *
+ * Configure database connection settings 
+*/
 define('DB_HOSTNAME', 'mysql:dbname=project_db;host=127.0.0.1');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
 
-// COOKIE
-// Configure cookie parameters and security
+
+
+
+/**
+ * --------------------------------------
+ * COOKIE
+ * --------------------------------------
+ * 
+ * Configure cookie parameters and security
+ */
 define('ENABLE_SECURE_COOKIE', false);
 
-// SESSION
+
+
+
+/**
+ * --------------------------------------
+ * SESSION
+ * --------------------------------------
+ */
 define('DEFAULT_SESSION_COOKIE_NAME', 'sessid');
 define('ENABLE_SECURE_SESSION_COOKIE', false);
 
-// MAIL
-// Configure from mailing API
+
+
+
+/** 
+ * ---------------------------------------
+ * MAIL 
+ * ---------------------------------------
+ * 
+ * Configure from mailing API
+ */
 define('MAIL_DEFAULT_FROM', '');
 define('MAIL_DEFAULT_FROM_NAME', '');
 define('MAIL_DEFAULT_HOST', 'smtp.mailgun.org');
@@ -57,18 +96,30 @@ define('MAIL_DEFAULT_SMTPAUTH', false);
 define('MAIL_DEFAULT_USERNAME', '');
 define('MAIL_DEFAULT_PASSWORD', '');
 
-// DATE/TIME
-// Default timezone used. Make sure to refer to the PHP manual before making changes.
+
+
+
+/**
+ * ----------------------------------------
+ * DATE AND TIME 
+ * ----------------------------------------
+ * 
+ * Default timezone used. Make sure to refer 
+ * to the PHP manual before making changes.
+ */
 define('SET_TIMEZONE', 'Africa/Lagos');
 
-// APP SECRETS
-// Define app secret token to access secure pages
+
+
+
+/**
+ * -----------------------------------------
+ * APP SECRETS 
+ * -----------------------------------------
+ * 
+ * Define app secret token to access secure pages
+ */
 define('ACCESS_LEVEL_TOKEN', '');
 define('DEFAULT_CIPHER_METHOD', 'AES-128-CTR');
 define('DEFAULT_CRYPT_KEY', '');
 define('DEFAULT_CRYPT_IV', '');
-
-// API CONFIGS
-
-// DEFINE DOMAIN/SUBDOMAIN CONFIGS USED IN APP
-define('IMG_CDN_URL', '');
