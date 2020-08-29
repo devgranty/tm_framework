@@ -50,7 +50,7 @@ define('ENABLE_SECURE_SCHEME', false);
  *
  * Configure database connection settings 
 */
-define('DB_HOSTNAME', 'mysql:dbname=project_db;host=127.0.0.1');
+define('DB_HOSTNAME', 'mysql:dbname=;host=127.0.0.1');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
 
@@ -76,25 +76,6 @@ define('ENABLE_SECURE_COOKIE', false);
  */
 define('DEFAULT_SESSION_COOKIE_NAME', 'sessid');
 define('ENABLE_SECURE_SESSION_COOKIE', false);
-
-
-
-
-/** 
- * ---------------------------------------
- * MAIL 
- * ---------------------------------------
- * 
- * Configure from mailing API
- */
-define('MAIL_DEFAULT_FROM', '');
-define('MAIL_DEFAULT_FROM_NAME', '');
-define('MAIL_DEFAULT_HOST', 'smtp.mailgun.org');
-define('MAIL_DEFAULT_PORT', 25);
-define('MAIL_DEFAULT_SMTPSECURE', 'tls');
-define('MAIL_DEFAULT_SMTPAUTH', false);
-define('MAIL_DEFAULT_USERNAME', '');
-define('MAIL_DEFAULT_PASSWORD', '');
 
 
 
